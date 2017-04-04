@@ -237,9 +237,6 @@ class Command:
 		self.size = file.tell()
 		file.close()
 
-
-jfkldjk
-
 	def send(self, textmate):
 		textmate.write(enc(self.command + '\n'))
 		for name in self.variables.keys():
